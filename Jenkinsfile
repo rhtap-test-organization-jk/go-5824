@@ -39,6 +39,7 @@ pipeline {
                 script {
                     rhtap.info( 'build_container..')
                     rhtap.buildah_rhtap()
+                    rhtap.merge_sboms()
                 }
             }
         }
